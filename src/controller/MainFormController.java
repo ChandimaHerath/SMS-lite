@@ -1,10 +1,10 @@
-package lk.ijse.dep7.sms_lite.controller;
-
+package controller;
+import TM.StudentTM;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import lk.ijse.dep7.sms_lite.TM.StudentTM;
+
 
 import java.sql.*;
 import java.util.Optional;
@@ -54,7 +54,7 @@ public class MainFormController {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sms_lite", "root", "mysql");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sms_lite", "root", "abc");
             saveStudentStm = connection.prepareStatement("INSERT INTO student VALUES (?,?)");
             saveContactStm = connection.prepareStatement("INSERT INTO contact VALUES (?,?)");
             searchStudentStm = connection.prepareStatement("SELECT * FROM student WHERE id = ?");

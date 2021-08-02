@@ -13,8 +13,8 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep7/sms_lite/view/MainForm.fxml"))));
-        primaryStage.setTitle("SMS");
+        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/MainForm.fxml"))));
+        primaryStage.setTitle("Student Management");
         primaryStage.setResizable(false);
         primaryStage.centerOnScreen();
         primaryStage.show();

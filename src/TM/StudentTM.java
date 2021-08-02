@@ -1,4 +1,4 @@
-package lk.ijse.dep7.sms_lite.TM;
+package TM;
 
 public class StudentTM {
     private String id;
